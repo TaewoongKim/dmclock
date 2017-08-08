@@ -199,6 +199,8 @@ namespace crimson {
 	} else {
 	  if (0 != dist_req_val) {
 	    increment *= dist_req_val;
+	  } else {
+	    increment *= 0.1;
 	  }
 	  return std::max(time, prev + increment);
 	}
